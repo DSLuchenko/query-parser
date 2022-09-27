@@ -6,7 +6,8 @@ const types = {
     'RSDLPSTR': 0,
     'RSDLONG': 1,
     'RSDDATE': 2,
-    'RSDSHORT':3
+    'RSDSHORT':3,
+    'RSDCHAR':4
 }
 
 const replaceAt = (str,index, replacement)=>{
@@ -20,11 +21,21 @@ const replaceAt = (str,index, replacement)=>{
 const getValueByType=(type,value)=>{
     switch (type) {
         case types.RSDLPSTR:
-            return (`'${value}'`);
+            let tmpValue;
+            if(value===''){
+                tmpValue = 'CHR(1)';
+            }
+            else{
+                tmpValue = `'${value}'`
+            }
+            
+            return (tmpValue);
         case types.RSDLONG:
             return value;
         case types.RSDSHORT:
             return value;
+        case types.RSDCHAR:
+            return `CHR(${value})`;
         case types.RSDDATE:
             return `to_date('${value}','dd.mm.yyyy')`;
         default:
