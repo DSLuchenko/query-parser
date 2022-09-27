@@ -1,8 +1,10 @@
-const fs = require('fs');
-//var text = fs.readFileSync('test1.txt','utf-8');
-var text = process.argv[2];
+import * as fs from 'fs';
+import * as ibm866 from 'ibm866';
+var data = fs.readFileSync('test.txt');
+var text = ibm866.decode(data);
+//var text = process.argv[2];
 
-const types = {
+const DATA_TYPES = {
     'RSDLPSTR': 0,
     'RSDLONG': 1,
     'RSDDATE': 2,
@@ -18,9 +20,9 @@ const replaceAt = (str,index, replacement)=>{
     return res;
 }
 
-const getValueByType=(type,value)=>{
-    switch (type) {
-        case types.RSDLPSTR:
+const getValueByType=(valueType,value)=>{
+    switch (valueType) {
+        case DATA_TYPES.RSDLPSTR:
             let tmpValue;
             if(value===''){
                 tmpValue = 'CHR(1)';
@@ -30,13 +32,13 @@ const getValueByType=(type,value)=>{
             }
             
             return (tmpValue);
-        case types.RSDLONG:
+        case DATA_TYPES.RSDLONG:
             return value;
-        case types.RSDSHORT:
+        case DATA_TYPES.RSDSHORT:
             return value;
-        case types.RSDCHAR:
+        case DATA_TYPES.RSDCHAR:
             return `CHR(${value})`;
-        case types.RSDDATE:
+        case DATA_TYPES.RSDDATE:
             return `to_date('${value}','dd.mm.yyyy')`;
         default:
             break;
@@ -49,9 +51,9 @@ const getValues = (str) => {
     let tmpIdx;
     let valueType;
     tmpArr.forEach((item)=>{
-        for (type in types){
-            if(item.includes(type)){
-                valueType = types[type];
+        for (let t in DATA_TYPES){
+            if(item.includes(t)){
+                valueType = DATA_TYPES[t];
                 break;
             } 
         }
@@ -69,6 +71,7 @@ const getValues = (str) => {
 }
 
 const getQuery = (str) => {
+    
     let query = str.split('SQL\\Execute ')[1];
     let tmpQuery = query.trim().split('\n')
     tmpQuery[0] = tmpQuery[0].split('  ')[0];
