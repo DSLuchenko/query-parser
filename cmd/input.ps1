@@ -1,4 +1,4 @@
 #input query instead of 'here'
-node .\app.js "here"
+node ..\src\app.js "here"
 															  
 pause

@@ -1,0 +1,8 @@
+# IDE - VSCode
+.vscode/*
+
+# Dependency directories
+node_modules/
+
+# Test
+*.txt

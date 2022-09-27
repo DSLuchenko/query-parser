@@ -1,8 +1,8 @@
-import * as fs from 'fs';
 import * as ibm866 from 'ibm866';
-var data = fs.readFileSync('test.txt');
+
+var data = process.argv[2];
 var text = ibm866.decode(data);
-//var text = process.argv[2];
+
 
 const DATA_TYPES = {
     'RSDLPSTR': 0,
