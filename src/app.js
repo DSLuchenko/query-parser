@@ -1,6 +1,8 @@
 import * as ibm866 from 'ibm866';
+import * as fs from 'fs';
 
-var data = process.argv[2];
+var data = fs.readFileSync('test.txt');
+//var data = process.argv[2];
 var text = ibm866.decode(data);
 
 
@@ -74,7 +76,7 @@ const getQuery = (str) => {
     
     let query = str.split('SQL\\Execute ')[1];
     let tmpQuery = query.trim().split('\n')
-    tmpQuery[0] = tmpQuery[0].split('  ')[0];
+    tmpQuery[0] = tmpQuery[0].split('   ')[0];
     tmpQuery = tmpQuery.map(item=>{
         return item.trim();
     })
