@@ -21,7 +21,7 @@ npm install
 # Using
 ### Скопировать запрос из файла трассировки
 <p align='center'>
-<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/1.jpg' width='1280' alt='Build errors'>
+<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/1.jpg?raw=true' width='1280' alt='Build errors'>
 </p>
 
 ### Вставить запрос в файл .\cmd\input.ps1 
