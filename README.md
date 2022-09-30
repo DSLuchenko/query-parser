@@ -1,4 +1,4 @@
-# query-parser - подставляет значения(value) в запрос из трассировки Rs-trace.
+# query-parser - ### подставляет значения(value) в запрос из трассировки Rs-trace.
 
 # Install
 ## Клонировать репозиторий
@@ -20,7 +20,7 @@ npm install
 # Using
 ### Скопировать запрос из файла трассировки
 <p align='center'>
-<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/1.jpg' width='600' alt='Build errors'>
+<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/1.jpg' width='1280' alt='Build errors'>
 </p>
 
 ### Вставить запрос в файл .\cmd\input.ps1 
@@ -29,7 +29,7 @@ npm install
 
 ### Скопировать готовый запрос из cmd
 <p align='center'>
-<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg' width='600' alt='Build errors'>
+<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg' width='1280' alt='Build errors'>
 </p>
 
 
