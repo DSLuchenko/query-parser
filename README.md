@@ -30,7 +30,7 @@ npm install
 
 ### Скопировать готовый запрос из cmd
 <p align='center'>
-<img src='[https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg](https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg?raw=true)' width='1280' alt='Build errors'>
+<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg?raw=true' width='1280' alt='Build errors'>
 </p>
 
 
