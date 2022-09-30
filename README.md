@@ -1,17 +1,17 @@
 # query-parser: 
-### подставляет значения(value) в запрос из трассировки Rs-trace.
+### РїРѕРґСЃС‚Р°РІР»СЏРµС‚ Р·РЅР°С‡РµРЅРёСЏ(value) РІ Р·Р°РїСЂРѕСЃ РёР· С‚СЂР°СЃСЃРёСЂРѕРІРєРё Rs-trace.
 
 # Install
-## Клонировать репозиторий
+## РљР»РѕРЅРёСЂРѕРІР°С‚СЊ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 ```sh
 git clone https://github.com/DSLuchenko/query-parser.git
 ```
-## В коммандной строке проверить версию NodeJS 
+## Р’ РєРѕРјРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРµ РїСЂРѕРІРµСЂРёС‚СЊ РІРµСЂСЃРёСЋ NodeJS 
 ```sh
 node -v
 v16.17.0
 ```
-## Установить зависимости
+## РЈСЃС‚Р°РЅРѕРІРёС‚СЊ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё
 ```sh
 npm install
 ```
@@ -19,18 +19,18 @@ npm install
 ### -------------------------------------------------------------
 
 # Using
-### Скопировать запрос из файла трассировки
+### РЎРєРѕРїРёСЂРѕРІР°С‚СЊ Р·Р°РїСЂРѕСЃ РёР· С„Р°Р№Р»Р° С‚СЂР°СЃСЃРёСЂРѕРІРєРё
 <p align='center'>
 <img src='https://github.com/DSLuchenko/query-parser/blob/main/img/1.jpg' width='1280' alt='Build errors'>
 </p>
 
-### Вставить запрос в файл .\cmd\input.ps1 
+### Р’СЃС‚Р°РІРёС‚СЊ Р·Р°РїСЂРѕСЃ РІ С„Р°Р№Р» .\cmd\input.ps1 
 
-### Запустить батник .\cmd\parse.bat
+### Р—Р°РїСѓСЃС‚РёС‚СЊ Р±Р°С‚РЅРёРє .\cmd\parse.bat
 
-### Скопировать готовый запрос из cmd
+### РЎРєРѕРїРёСЂРѕРІР°С‚СЊ РіРѕС‚РѕРІС‹Р№ Р·Р°РїСЂРѕСЃ РёР· cmd
 <p align='center'>
-<img src='https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg' width='1280' alt='Build errors'>
+<img src='[https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg](https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg?raw=true)' width='1280' alt='Build errors'>
 </p>
 
 
