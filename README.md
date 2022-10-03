@@ -24,11 +24,9 @@ npm install
 <img src='https://github.com/DSLuchenko/query-parser/blob/main/img/1.jpg?raw=true' width='1280' alt='Build errors'>
 </p>
 
-### Вставить запрос в файл .\cmd\input.ps1 
-
 ### Запустить батник .\cmd\parse.bat
 
-### Скопировать готовый запрос из cmd
+### Результирующий запрос отобразится в коммандной строке и будет автоматически скопирован в буффер обмена.
 <p align='center'>
 <img src='https://github.com/DSLuchenko/query-parser/blob/main/img/2.jpg?raw=true' width='1280' alt='Build errors'>
 </p>

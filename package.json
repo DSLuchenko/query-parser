@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/DSLuchenko/query-parser#readme",
   "dependencies": {
-    "clipboardy": "^3.0.0",
-    "ibm866": "^3.0.4"
+    "clipboardy": "^3.0.0"
   },
   "type": "module"
 }
