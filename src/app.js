@@ -1,9 +1,10 @@
 import * as ibm866 from 'ibm866';
-import * as fs from 'fs';
+//import * as fs from 'fs';
+import clipboard from 'clipboardy';
 
 //var data = fs.readFileSync('test.txt');
-var data = process.argv[2];
-var text = ibm866.decode(data);
+var text = clipboard.readSync();
+//var text = ibm866.decode(data);
 
 
 const DATA_TYPES = {
@@ -100,5 +101,12 @@ const getQuery = (str) => {
     return resQuery;
 
 }
+
 console.clear();
 console.log(getQuery(text))
+clipboard.write(getQuery(text))
+
+console.log('\nЗапрос скопирован в буффер обмена')
+
+
+
