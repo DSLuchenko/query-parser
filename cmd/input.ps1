@@ -1,4 +1,6 @@
-#input query instead of 'here'
-node ..\src\app.js '_'
+#input query instead to @" ___ "@
+node ..\src\app.js @"
+ 
+"@
 															   
 pause															   
