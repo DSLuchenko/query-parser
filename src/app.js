@@ -11,8 +11,9 @@ const DATA_TYPES = {
     'RSDLONG': 1,
     'RSDDATE': 2,
     'RSDSHORT':3,
-    'RSDCHAR':4,
-    'RSDTIME':5
+    'RSDTIME':5,
+    'RSDPT_BIGINT':6
+
 }
 
 const replaceAt = (str,index, replacement)=>{
@@ -36,6 +37,8 @@ const getValueByType=(valueType,value)=>{
             
             return (tmpValue);
         case DATA_TYPES.RSDLONG:
+            return value;
+        case DATA_TYPES.RSDPT_BIGINT:
             return value;
         case DATA_TYPES.RSDSHORT:
             return value;
