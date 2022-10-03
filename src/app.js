@@ -11,7 +11,8 @@ const DATA_TYPES = {
     'RSDLONG': 1,
     'RSDDATE': 2,
     'RSDSHORT':3,
-    'RSDCHAR':4
+    'RSDCHAR':4,
+    'RSDTIME':5
 }
 
 const replaceAt = (str,index, replacement)=>{
@@ -41,7 +42,12 @@ const getValueByType=(valueType,value)=>{
         case DATA_TYPES.RSDCHAR:
             return `CHR(${value})`;
         case DATA_TYPES.RSDDATE:
+            if(value==='0.0.0'){
+                value='01.01.0001'
+            }
             return `to_date('${value}','dd.mm.yyyy')`;
+        case DATA_TYPES.RSDTIME:
+            return `to_date('01.01.0001 ${value}','dd.mm.yyyy HH24:MI:SS')`;
         default:
             break;
     }
