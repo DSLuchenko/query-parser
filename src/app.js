@@ -1,4 +1,4 @@
-import * as ibm866 from 'ibm866';
+//import * as ibm866 from 'ibm866';
 //import * as fs from 'fs';
 import clipboard from 'clipboardy';
 
@@ -12,6 +12,7 @@ const DATA_TYPES = {
     'RSDLONG': 1,
     'RSDDATE': 2,
     'RSDSHORT':3,
+	'RSDCHAR':4,
     'RSDTIME':5,
     'RSDPT_BIGINT':6
 
