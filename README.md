@@ -11,7 +11,7 @@ git clone https://github.com/DSLuchenko/query-parser.git
 node -v
 v16.17.0
 ```
-## Установить зависимости
+## Установить зависимости(npm install запускать через cmd.exe, в каталоге .\\query-parser. Должна появиться папка node_modules с установленными зависимостями )
 ```sh
 npm install
 ```
