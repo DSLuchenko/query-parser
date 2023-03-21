@@ -1,9 +1,10 @@
-import * as ibm866 from 'ibm866';
-import * as fs from 'fs';
+//import * as ibm866 from 'ibm866';
+//import * as fs from 'fs';
+import clipboard from 'clipboardy';
 
 //var data = fs.readFileSync('test.txt');
-var data = process.argv[2];
-var text = ibm866.decode(data);
+var text = clipboard.readSync();
+//var text = ibm866.decode(data);
 
 
 const DATA_TYPES = {
@@ -11,9 +12,10 @@ const DATA_TYPES = {
     'RSDLONG': 1,
     'RSDDATE': 2,
     'RSDSHORT':3,
-    'RSDCHAR':4,
+	'RSDCHAR':4,
     'RSDTIME':5,
     'RSDPT_BIGINT':6
+
 }
 
 const replaceAt = (str,index, replacement)=>{
@@ -100,5 +102,12 @@ const getQuery = (str) => {
     return resQuery;
 
 }
+
 console.clear();
 console.log(getQuery(text))
+clipboard.write(getQuery(text))
+
+console.log('\nЗапрос скопирован в буффер обмена')
+
+
+

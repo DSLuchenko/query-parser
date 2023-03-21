@@ -1,2 +1,5 @@
-Powershell.exe -executionpolicy remotesigned -File ".\input.ps1"
+node ..\src\app.js
+
+
+pause
 
